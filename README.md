@@ -1,6 +1,6 @@
 # Nexter
 
-Nexter is a single home page website developed to learn advanced SCSS and Grid CSS technology. It includes sophisticated animations and responsive design, making it a great example of modern web design techniques. This project was created by following the Udemy course [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass) by [Jonas Schmedtmann](https://x.com/jonasschmedtman) .
+Nexter is a single home page website developed to learn advanced SCSS, CSS Grid and Flexbox technologies. It includes sophisticated animations and responsive design, making it a great example of modern web design techniques. This project was created by following the Udemy course [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass) by [Jonas Schmedtmann](https://x.com/jonasschmedtman) .
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ Nexter is a single home page website developed to learn advanced SCSS and Grid C
 
 Natour is a learning project that covers:
 
-- **Semantic HTML:** Structuring HTML in a meaningful and accessible way.
+- **Sematic HTML:** Structuring HTML in a meaningful and accessible way.
 - **Inheritance, Cascading, and Value Processing in CSS:** Understanding how CSS rules are applied and inherited.
 - **Visual Formatting Model:** Learning about the box model, positioning schemes, and stacking contexts.
 - **SCSS (Sass) Preprocessing:** Utilizing SCSS for more powerful and flexible stylesheets.
@@ -26,6 +26,7 @@ Natour is a learning project that covers:
 - **7-1 Pattern:** Organizing SCSS files using the 7-1 pattern for better maintainability.
 - **Animations:** Adding engaging animations using SCSS
 - **Flexbox Layouts:** Creating layouts with Flexbox and mastering modern CSS layout techniques.
+- **Grid Layouts:** Designing responsive and flexible grid-based layouts using CSS Grid.
 - **Responsive Design:** Ensuring the site looks great on all devices, from desktops to mobile phones.
 - **Performance Optimization:** Implementing techniques to improve the loading speed and performance of the website.
 - **Feature Queries:** Using CSS feature queries to apply styles based on browser support for specific CSS features.
@@ -39,6 +40,7 @@ The project includes graphics provided by Jonas Schmedtmann for portfolio purpos
 - HTML5
 - SCSS (Sass)
 - CSS Flexbox
+- CSS Grid
 - Gulp (for minifying CSS and JS files)
 
 ## Installation
