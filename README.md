@@ -1,6 +1,6 @@
-# Trillo
+# Nexter
 
-Trillo is a single home page website developed to learn advanced SCSS and Flexbox. It includes sophisticated animations and responsive design, making it a great example of modern web design techniques. This project was created by following the Udemy course [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass) by [Jonas Schmedtmann](https://x.com/jonasschmedtman) .
+Nexter is a single home page website developed to learn advanced SCSS and Grid CSS technology. It includes sophisticated animations and responsive design, making it a great example of modern web design techniques. This project was created by following the Udemy course [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass) by [Jonas Schmedtmann](https://x.com/jonasschmedtman) .
 
 ## Table of Contents
 
@@ -48,14 +48,14 @@ To set up the project locally, follow these steps:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/Maciej-Staniec/Trillo-Project
+   git clone https://github.com/Maciej-Staniec/Nexter-Project
 
    ```
 
 2. Navigate into the project directory:
 
    ```sh
-   cd Trillo-Project
+   cd Nexter-Project
    ```
 
 3. Install dependencies:
@@ -125,7 +125,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Contact
 
 - [Maciej Staniec](https://github.com/Maciej-Staniec/) - GitHub Profile
-- [Project Link](https://github.com/Maciej-Staniec/Trillo-Project)
+- [Project Link](https://github.com/Maciej-Staniec/Nexter-Project)
 - [LinkedIn](https://www.linkedin.com/in/maciej-staniec/)
 
 ## Acknowledgments
