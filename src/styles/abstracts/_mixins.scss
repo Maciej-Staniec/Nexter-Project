@@ -1,0 +1,74 @@
+// In SCSS, you can define breakpoints using a map, which allows you to store key-value pairs. Each key represents a breakpoint name, and each value represents the corresponding pixel value for that breakpoint.
+//Benefits of Using a Map for Breakpoints
+// Centralized Management: All breakpoint values are defined in one place, making it easy to manage and update them.
+// Readability: Using descriptive names for breakpoints improves the readability and maintainability of your code.
+// Consistency: Ensures consistent breakpoint values are used throughout your stylesheets.
+$breakpoints: (
+  // 400px / 16px = 25em
+  "mobile-400": 25em,
+  // 500px / 16px = 31.25em
+  "mobile-500": 31.25em,
+  // 600px / 16px = 37.5em
+  "mobile-600": 37.5em,
+  // 700px / 16px = 43.75em
+  "tablet-700": 43.75em,
+  //800px / 16px = 50em
+  "tablet-800": 50em,
+  // 900px / 16px = 56.25em
+  "tablet-900": 56.25em,
+  // 1000px / 16px = 62.5em
+  "tablet-1000": 62.5em,
+  // 1100px / 16px = 68.75em
+  "tablet-1100": 68.75em,
+  // 1200px / 16px = 75em
+  "laptop": 75em,
+  // 1800px / 16px = 112.5em
+  "desktop-big": 112.5em
+);
+
+// The respond-to mixin is defined to handle the media query logic. The mixin takes a single parameter $breakpoint, which corresponds to the keys in the $breakpoints map
+@mixin respond-to($breakpoint) {
+  // We use the map-get function to retrieve the breakpoint value from the $breakpoints map. This function takes two arguments: the map and the key. The key is the $breakpoint parameter passed to the mixin.
+  //$breakpoints: The map containing the breakpoint names and values.
+  //$breakpoint: The key whose value we want to retrieve from the map (e.g, tablet-landscape).
+  //$size: The variable that stores the breakpoint value (e.g., 480px).
+  $size: map-get($breakpoints, $breakpoint);
+
+  // check if the breakpoint value exists in the map.
+  @if $size {
+    // check if breakpoint name is different from "desktop-big". If true then apply the max-width condition
+    @if $breakpoint != "desktop-big" {
+      // Create a media query for the given breakpoint
+      @media only screen and (max-width: $size) {
+        // Insert the nested styles provided when the mixin is called
+        @content;
+      }
+    }
+    // if the above statement is false then apply the min-width condition
+    @else {
+      @media only screen and (min-width: $size) {
+        // Insert the nested styles provided when the mixin is called
+        @content;
+      }
+    }
+  }
+  // If the size value does not exist in the map, generate a warning
+  @else {
+    @warn 'Breakpoint #{$breakpoint} not found in $breakpoints map.';
+  }
+}
+
+// Mixin to detect touch devices
+@mixin touch-device {
+  // Media query for devices that have no hover and use coarse pointers (touch devices)
+  @media (hover: none) and (pointer: coarse) {
+    @content; // Include the nested touch-device media query content
+  }
+}
+
+// Center flexbox content
+@mixin flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

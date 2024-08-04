@@ -1,0 +1,22 @@
+/* 
+***********************************************
+Global Resets
+*********************************************** 
+*/
+*,
+*::before,
+*::after {
+  margin: 0; // Removes default margin from all elements and pseudo-elements.
+  padding: 0; // Removes default padding from all elements and pseudo-elements.
+  box-sizing: inherit; // Inherits the box-sizing property to ensure consistent box model behavior.
+}
+
+html {
+  font-size: 62.5%; // Sets the base font size to 62.5% of the default (16px), making 1rem equal to 10px.
+  box-sizing: border-box; // Applies border-box box-sizing model to the entire document.
+  overflow-x: hidden; // Prevents horizontal overflow, hiding any content that exceeds the viewport width.
+}
+
+body {
+  overflow: inherit; // Inherits the overflow property from its parent element (html in this case).
+}
