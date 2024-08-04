@@ -22,7 +22,6 @@ Natour is a learning project that covers:
 - **Visual Formatting Model:** Learning about the box model, positioning schemes, and stacking contexts.
 - **SCSS (Sass) Preprocessing:** Utilizing SCSS for more powerful and flexible stylesheets.
 - **Component-Driven Design:** Breaking down the UI into reusable components.
-- **Component-Driven Design:** Breaking down the UI into reusable components.
 - **7-1 Pattern:** Organizing SCSS files using the 7-1 pattern for better maintainability.
 - **Animations:** Adding engaging animations using SCSS
 - **Flexbox Layouts:** Creating layouts with Flexbox and mastering modern CSS layout techniques.

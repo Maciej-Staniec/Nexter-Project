@@ -1,0 +1,1 @@
+Build the project to make it backwards compatible and compress the HTML and CSS files.

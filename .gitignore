@@ -1,0 +1,13 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore files
+# design_rules.txt
+# syntaxes.txt
+# useful-info.txt
+# flexbox.html
+# flexbox.css
+# grid.html
+# grid.css
+# To-do.txt
+# .gitignore
