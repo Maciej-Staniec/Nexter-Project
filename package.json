@@ -1,0 +1,37 @@
+{
+  "name": "Nexter-Project",
+  "version": "1.0.0",
+  "description": "Landing page for Nexter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:all": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maciej-Staniec/Trillo-Project.git"
+  },
+  "keywords": [
+    "Trillo",
+    "landing",
+    "home",
+    "page",
+    "flexbox"
+  ],
+  "author": "Maciej Staniec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maciej-Staniec/Trillo-Project/issues"
+  },
+  "homepage": "https://github.com/Maciej-Staniec/Trillo-Project#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.1",
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-minifier-terser": "^7.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.70.0"
+  }
+}
