@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  overflow: inherit;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+
+.container {
+  &__main {
+    background-color: #eee;
+    max-width: 100rem;
+    margin: 3rem auto;
+  }
+
+  &__section {
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+    gap: 1.2rem;
+
+    /* grid-template:
+      "header header header" 100px
+      "sidebar main main" 200px
+      "footer footer footer" 100px
+      / 1fr 2fr 1fr; */
+
+    /* grid-template-columns: repeat(2, minmax(100px, 1fr)); */
+
+    /* grid-template-rows: repeat(3, minmax(10rem, 1fr)); */
+  }
+}
+
+.item {
+  padding: 1.6rem;
+  font-size: 2rem;
+
+  &--1 {
+    background-color: Orange;
+  }
+  &--2 {
+    background-color: green;
+    color: #fff;
+  }
+  &--3 {
+    background-color: violet;
+  }
+  &--4 {
+    background-color: pink;
+  }
+  &--5 {
+    background-color: blue;
+    color: #fff;
+  }
+  &--6 {
+    background-color: brown;
+    color: #fff;
+  }
+}
