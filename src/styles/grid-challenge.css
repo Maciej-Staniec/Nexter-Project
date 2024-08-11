@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  overflow: inherit;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+
+.container__main {
+  background-color: #eee;
+  max-width: 100rem;
+  margin: 3rem auto;
+}
+.container__section {
+  display: grid;
+}
+
+.item {
+  background-color: red;
+  color: #fff;
+}
