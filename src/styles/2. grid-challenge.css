@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  overflow: inherit;
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  padding: 3.2rem;
+  color: white;
+  gap: 3.2rem;
+  grid-template-columns: repeat(3, 1fr) minmax(15rem, 25rem);
+  grid-template-rows: 10rem 20rem 40rem 10rem;
+  grid-template-areas: "head head head head" "box-1 box-2 box-3 side" "main main main side" "foot foot foot foot";
+  grid-template-areas: ". head head ." "box-1 box-2 box-3 side" "main main main side" ". foot foot .";
+}
+.container > * {
+  background-color: red;
+  padding: 3.2rem;
+}
+
+.header {
+  grid-area: head;
+}
+
+.box-1 {
+  grid-area: box-1;
+}
+
+.box-2 {
+  grid-area: box-2;
+}
+
+.box-3 {
+  grid-area: box-3;
+}
+
+.main {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: side;
+}
+
+.footer {
+  grid-area: foot;
+}
