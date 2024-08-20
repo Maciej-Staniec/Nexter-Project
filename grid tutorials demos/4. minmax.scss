@@ -14,7 +14,7 @@ html {
 
 body {
   overflow: inherit;
-  font-size: 1.4rem;
+  font-size: 3rem;
   font-family: sans-serif;
 }
 
@@ -24,8 +24,42 @@ body {
   margin: 3.2rem auto;
   background: #ddd;
   display: grid;
-  grid-template-rows: repeat(2, 15rem);
-  grid-template-columns: ;
+  grid-template-rows: repeat(2, 150px);
+
+  // The grid-template-columns: max-content property in CSS Grid is used to define the width of columns based on the largest width of their content. This means that each column will be just wide enough to fit its largest item without overflowing.
+  grid-template-columns: max-content 1fr max-content;
+
+  // The 'min-content' value sets each column width to be as narrow as possible while still fitting its smallest content. This ensures that the columns will not be wider than necessary, optimizing space based on the smallest content size in each column.
+  grid-template-columns: min-content 1fr 1fr;
+
+  /* The 4th item does not fit its grid cell and overflows. 
+   This happens because:
+   - `grid-template-columns: min-content 1fr 1fr;` specifies that the first column is only wide enough to fit its content (widest single word in this case). It doesn't specifiy the height of the row.
+*/
+
+  /* Mitigating the Issue with `grid-template-rows: repeat(2, min-content);` */
+
+  /* 
+   Changing the rows definition to `grid-template-rows: repeat(2, min-content);` addresses the issue by:
+   - Adjusting the height of each row to fit the content within it. 
+   - `min-content` ensures that each row's height is just enough to fit the tallest content in that row.
+   - For example, if the 4th item has a lot of content, `min-content` ensures that the row's height adjusts to fit all the content without causing overflow.
+*/
+
+  grid-template-rows: repeat(2, min-content);
+
+  /* 
+CSS grid minmax() Function
+
+The minmax() function in CSS Grid allows you to define a grid track (column or row) that has a flexible size range. This function is particularly useful for creating responsive designs that adapt to different screen sizes while maintaining a desired minimum and maximum size for your grid tracks.
+
+Syntax:
+grid-template-columns: minmax(minimum, maximum);
+
+- minimum: The smallest size the grid track can shrink to.
+- maximum: The largest size the grid track can grow to.
+  */
+
 }
 
 .item {
