@@ -19,12 +19,11 @@ body {
 }
 
 .container {
-  max-width: 100rem;
-  height: 80vh;
+  width: 90%;
+  height: 90vh;
   margin: 3.2rem auto;
   background: #ddd;
   display: grid;
-  grid-template-rows: repeat(2, 150px);
   grid-template-columns: max-content 1fr max-content;
   grid-template-columns: min-content 1fr 1fr;
   /* The 4th item does not fit its grid cell and overflows. 
@@ -38,18 +37,33 @@ body {
      - `min-content` ensures that each row's height is just enough to fit the tallest content in that row.
      - For example, if the 4th item has a lot of content, `min-content` ensures that the row's height adjusts to fit all the content without causing overflow.
   */
-  grid-template-rows: repeat(2, min-content);
   /* 
-  CSS grid minmax() Function
+    CSS grid minmax() Function
 
-  The minmax() function in CSS Grid allows you to define a grid track (column or row) that has a flexible size range. This function is particularly useful for creating responsive designs that adapt to different screen sizes while maintaining a desired minimum and maximum size for your grid tracks.
+    The minmax() function in CSS Grid allows you to define a grid track (column or row) that has a flexible size range. This function is particularly useful for creating responsive designs that adapt to different screen sizes while maintaining a desired minimum and maximum size for your grid tracks.
 
-  Syntax:
-  grid-template-columns: minmax(minimum, maximum);
+    Syntax:
+    grid-template-columns: minmax(minimum, maximum);
 
-  - minimum: The smallest size the grid track can shrink to.
-  - maximum: The largest size the grid track can grow to.
-    */
+    - minimum: The smallest size the grid track can shrink to.
+    - maximum: The largest size the grid track can grow to.
+  */
+  grid-template-columns: minmax(15rem, 40rem) repeat(3, 1fr);
+  /*
+    When you use the 1fr unit in CSS Grid, the minmax() function is implicitly applied to determine the minimum and maximum size of the grid track. The default behavior of the 1fr unit can be understood as:
+
+    grid-template-columns: minmax(auto, 1fr);
+
+    Default Behavior of 1fr:
+      - Minimum Size (auto): The grid track will shrink down to fit the content inside it if necessary, without shrinking smaller than the content (similar to min-content).
+      - Maximum Size (1fr): The grid track can grow to take up a proportional amount of the remaining available space in the grid container.
+  */
+  grid-template-columns: minmax(20rem, 50%) repeat(2, 1fr);
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fill, 10rem);
+  grid-template-columns: repeat(auto-fit, 10rem);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-auto-rows: 1fr;
 }
 
 .item--1 {
@@ -74,5 +88,5 @@ body {
   background-color: crimson;
 }
 .item--8 {
-  background-color: darkslaygray;
+  background-color: darkslategray;
 }

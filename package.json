@@ -12,10 +12,11 @@
     "url": "git+https://github.com/Maciej-Staniec/Nexter-Project.git"
   },
   "keywords": [
-    "Trillo",
+    "Nexter",
     "landing",
     "home",
     "page",
+    "grid",
     "flexbox"
   ],
   "author": "Maciej Staniec",
