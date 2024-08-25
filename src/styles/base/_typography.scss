@@ -1,6 +1,6 @@
 body {
-  font-family: "Open Sans", sans-serif; // Sets the primary font to "Open Sans", with a fallback to any available sans-serif font.
-  font-weight: 400; // Sets the default font weight to 400 (normal).
+  font-family: $font-primary;
+  font-weight: 300; // Sets the default font weight to 300 (normal).
   line-height: 1.5; // Sets the default line height to 1.5 times the font size for better readability.
   font-size: 1.4rem; // Sets the default font size to 1.4rem (14px).
 }
