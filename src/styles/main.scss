@@ -8,11 +8,14 @@
 
 // 3. Components
 @import "components/buttons";
+@import "components/gallery";
+@import "components/listings";
 
 // 4. Layout
-@import "layout/header";
+@import "layout/content";
 @import "layout/footer";
-@import "layout/layout";
+@import "layout/main-container";
+@import "layout/navbar";
 
 // 5. Pages
 @import "pages/home";
