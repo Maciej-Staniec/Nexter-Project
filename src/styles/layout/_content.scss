@@ -1,3 +1,42 @@
-.content{
-  
+.content {
+  @include main-grid;
+  grid-template-rows: 80vh min-content 40vw repeat(2, min-content);
+}
+
+.hero {
+  background-color: $color-secondary;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  .header {
+    grid-column: 1;
+  }
+
+  .realtors {
+    grid-column: 2;
+  }
+}
+
+.features {
+  background-color: #fff;
+}
+
+.cta {
+  background-color: $color-grey-light-1;
+}
+
+.listings {
+  background-color: #fff;
+  padding: 2.4rem;
+  &__item {
+    background-color: $color-grey-light-1;
+  }
+}
+
+.gallery {
+  background-color: $color-grey-light-1;
+}
+
+.footer {
+  background-color: $color-secondary;
 }
