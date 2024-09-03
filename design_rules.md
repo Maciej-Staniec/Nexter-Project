@@ -27,39 +27,39 @@
 
 **Tight Letter Spacing**
 
-- `-0.01rem` (equivalent to `-0.1px`):
+- `-1px`
 
   - **Use For**: Headings or titles where you want a more compact look.
   - **Note**: Creates a tighter appearance, best used sparingly to avoid readability issues.
 
-- `-0.005rem` (equivalent to `-0.05px`):
+- `-5px`
   - **Use For**: Subheadings or smaller text elements that need a slightly condensed look.
   - **Note**: Subtle tightening of text, good for maintaining readability while saving space.
 
 **Normal Letter Spacing (default)**
 
-- `0rem`:
+- `0px`:
   - **Use For**: Default letter spacing, suitable for most body text and elements.
   - **Note**: Maintains the default spacing of the font, ensuring optimal readability.
 
 **Loose Letter Spacing**
 
-- `0.005rem` (equivalent to `0.05px`):
+- `2px`
 
   - **Use For**: Paragraph text or content areas where readability is a priority.
   - **Note**: Slightly increases spacing, enhancing readability without creating too much space.
 
-- `0.01rem` (equivalent to `0.1px`):
+- `4px`
 
   - **Use For**: Uppercase text or elements where additional spacing can improve clarity.
   - **Note**: Provides a noticeable but not excessive increase in spacing, suitable for uppercase or emphasis.
 
-- `0.02rem` (equivalent to `0.2px`):
+- `5px`:
 
   - **Use For**: Special emphasis or decorative text where readability is not the primary concern.
   - **Note**: Significantly increases spacing, use for stylized text elements or highlights.
 
-- `0.03rem` (equivalent to `0.3px`):
+- `6px`:
   - **Use For**: Large displays, banners, or decorative headings.
   - **Note**: Creates very loose spacing, best used in designs where text density is low, and visual impact is desired.
 

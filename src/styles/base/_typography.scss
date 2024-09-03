@@ -4,3 +4,35 @@ body {
   line-height: 1.5; // Sets the default line height to 1.5 times the font size for better readability.
   font-size: 1.4rem; // Sets the default font size to 1.4rem (14px).
 }
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4 {
+  font-family: $font-display;
+}
+
+.heading-1 {
+  font-size: 3.6rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.heading-2 {
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+
+.heading-3 {
+  color: $color-primary;
+  font-size: 1.8rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+
+.heading-4 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
