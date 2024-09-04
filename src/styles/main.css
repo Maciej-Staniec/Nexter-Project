@@ -13,7 +13,7 @@ body {
 }
 
 .heading-1 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
 }
@@ -87,22 +87,32 @@ body {
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: 70% 30%;
+  grid-template-rows: 80vh;
   color: #fff;
 }
 .hero .header {
-  grid-column: 1;
   display: grid;
-  padding: 3.2rem 8rem 0 8rem;
+  grid-template-columns: minmax(min-content, 1fr);
+  grid-template-rows: 1fr repeat(5, min-content);
   justify-content: center;
+  align-content: center;
+  padding: 6.4rem;
 }
 .hero .header__logo {
   justify-self: center;
   height: 3.2rem;
 }
 .hero .realtors {
-  grid-column: 2;
   display: grid;
-  padding: 8rem;
+  grid-template-columns: minmax(min-content, 1fr);
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+  gap: 3.2rem;
+  justify-content: center;
+  align-content: center;
+  padding: 6.4rem;
+}
+.hero .realtors__list {
+  display: grid;
 }
 .hero .realtors__picture {
   height: 8rem;
