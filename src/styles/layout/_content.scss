@@ -6,28 +6,44 @@
   background-color: $color-secondary;
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: minmax(6.4rem, 1fr) repeat(6, 1fr) minmax(6.4rem, 1fr);
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 65% 35%;
   grid-template-rows: 80vh;
   color: #fff;
+
   .header {
-    // grid-column: 2 / 6;
     display: grid;
-    grid-template-columns: minmax(min-content, 1fr);
-    grid-template-rows: 1fr repeat(5, min-content);
+    grid-template-columns: minmax(min-content, max-content);
+    grid-template-rows: 1fr min-content min-content 1fr min-content min-content;
     justify-content: center;
     align-content: center;
     padding: 6.4rem 3.2rem 6.4rem 6.4rem;
+    gap: 1.6rem;
+    background-image: linear-gradient(
+        to right,
+        rgba($color-secondary, 0.93),
+        rgba($color-secondary, 0.93)
+      ),
+      url("../../img/hero.jpeg");
+
+    background-size: cover;
+
     &__logo {
       justify-self: center;
       height: 3.2rem;
     }
 
     &__seenon-text {
-      &::before {
-      }
-
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      gap: 1.2rem;
+      align-items: center;
+      color: $color-grey-light-2;
+      &::before,
       &::after {
+        content: "";
+        display: inline-block;
+        height: 1px;
+        background-color: $color-grey-light-2;
       }
     }
 
@@ -46,13 +62,14 @@
   }
 
   .realtors {
-    // grid-column: 6/-1;
     display: grid;
-    grid-template-columns: minmax(min-content, 1fr);
+    grid-template-columns: minmax(min-content, max-content);
     grid-template-rows: repeat(2, minmax(min-content, max-content));
     gap: 2.4rem;
     align-content: center;
-    // justify-content: center;
+    justify-content: center;
+
+    align-items: center;
     justify-items: center;
     padding: 6.4rem 6.4rem 6.4rem 3.2rem;
 
@@ -63,9 +80,6 @@
       row-gap: 2.4rem;
       column-gap: 1.6rem;
       align-items: center;
-    }
-
-    &__details {
     }
 
     &__picture {
@@ -87,7 +101,29 @@
 
 .features {
   background-color: #fff;
+  // background-color: red;
   grid-column: 2 / -2;
+  @include section-margin;
+
+  &__container {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+    gap: 6.4rem;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+
+  &__icon {
+    height: 4.8rem;
+    width: 4.8rem;
+    fill: $color-primary-dark;
+    grid-row: 1 / span 2;
+  }
 }
 
 .cta {

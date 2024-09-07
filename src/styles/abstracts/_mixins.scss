@@ -1,3 +1,23 @@
+// Section margin
+@mixin section-margin {
+  margin: 14.4rem 0;
+}
+
+// Grid layout used by the main and footer elements.
+@mixin main-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(9.6rem, 1fr) repeat(8, minmax(min-content, 15rem))
+    minmax(9.6rem, 1fr);
+}
+
+// Center flexbox content
+@mixin flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // In SCSS, you can define breakpoints using a map, which allows you to store key-value pairs. Each key represents a breakpoint name, and each value represents the corresponding pixel value for that breakpoint.
 //Benefits of Using a Map for Breakpoints
 // Centralized Management: All breakpoint values are defined in one place, making it easy to manage and update them.
@@ -65,19 +85,3 @@ $breakpoints: (
     @content; // Include the nested touch-device media query content
   }
 }
-
-// Center flexbox content
-@mixin flexbox-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin main-grid {
-  display: grid;
-  grid-template-columns: minmax(9.6rem, 1fr) repeat(8, minmax(min-content, 1fr)) minmax(
-      9.6rem,
-      1fr
-    );
-}
-

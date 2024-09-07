@@ -136,6 +136,14 @@ Here's what each part of the declaration means:
    - 100%: Represents the ending point of the blue portion of the gradient. It ends at the very end (rightmost edge) of the gradient.
 
 
+************** 
+Blending a colour into a background using linear-gradient with an SCSS colour variable
+**************
+
+Syntax:
+background: linear-gradient(direction, rgba($declared-colour, 0.5),rgba($declared-colour, 0.5)), url(../../img/img.jpg);
+
+
 ============= SKEW ==============
 transform: skewX(<angle>);
 

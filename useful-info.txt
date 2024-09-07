@@ -62,6 +62,6 @@ display: none;:
 
 =========== visibility ==============
 
-No, using visibility: hidden; alongside opacity: 0; will not break the animation. In fact, using visibility: hidden; is essential for ensuring that the hidden elements are completely removed from the layout, which helps prevent them from being clickable or interactive during the animation.
+Using visibility: hidden; alongside opacity: 0; will not break the animation. In fact, using visibility: hidden; is essential for ensuring that the hidden elements are completely removed from the layout, which helps prevent them from being clickable or interactive during the animation.
 
 When you set visibility: hidden;, the element becomes invisible and non-clickable, but it still occupies space in the layout

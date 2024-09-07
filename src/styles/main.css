@@ -68,17 +68,21 @@ body {
   color: #fff;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.6rem;
-  letter-spacing: 0.4rem;
-  font-weight: 300;
+  letter-spacing: 0.2rem;
   padding: 1.2rem 2.4rem;
-  background-color: #c69963;
   align-self: start;
   justify-self: start;
+  background-color: #b28451;
+}
+
+.header-btn {
+  background-color: #c69963;
+  margin-top: 1.2rem;
 }
 
 .content {
   display: grid;
-  grid-template-columns: minmax(9.6rem, 1fr) repeat(8, minmax(min-content, 1fr)) minmax(9.6rem, 1fr);
+  grid-template-columns: minmax(9.6rem, 1fr) repeat(8, minmax(min-content, 15rem)) minmax(9.6rem, 1fr);
   grid-template-rows: 80vh min-content 40vw repeat(2, min-content);
 }
 
@@ -86,22 +90,37 @@ body {
   background-color: #101d2c;
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: minmax(6.4rem, 1fr) repeat(6, 1fr) minmax(6.4rem, 1fr);
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 65% 35%;
   grid-template-rows: 80vh;
   color: #fff;
 }
 .hero .header {
   display: grid;
-  grid-template-columns: minmax(min-content, 1fr);
-  grid-template-rows: 1fr repeat(5, min-content);
+  grid-template-columns: minmax(min-content, max-content);
+  grid-template-rows: 1fr min-content min-content 1fr min-content min-content;
   justify-content: center;
   align-content: center;
   padding: 6.4rem 3.2rem 6.4rem 6.4rem;
+  gap: 1.6rem;
+  background-image: linear-gradient(to right, rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url("../../img/hero.jpeg");
+  background-size: cover;
 }
 .hero .header__logo {
   justify-self: center;
   height: 3.2rem;
+}
+.hero .header__seenon-text {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 1.2rem;
+  align-items: center;
+  color: #aaa;
+}
+.hero .header__seenon-text::before, .hero .header__seenon-text::after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  background-color: #aaa;
 }
 .hero .header__seenon-logos {
   display: grid;
@@ -117,10 +136,12 @@ body {
 }
 .hero .realtors {
   display: grid;
-  grid-template-columns: minmax(min-content, 1fr);
+  grid-template-columns: minmax(min-content, max-content);
   grid-template-rows: repeat(2, minmax(min-content, max-content));
   gap: 2.4rem;
   align-content: center;
+  justify-content: center;
+  align-items: center;
   justify-items: center;
   padding: 6.4rem 6.4rem 6.4rem 3.2rem;
 }
@@ -150,6 +171,24 @@ body {
 .features {
   background-color: #fff;
   grid-column: 2/-2;
+  margin: 14.4rem 0;
+}
+.features__container {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+  gap: 6.4rem;
+}
+.features__item {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+.features__icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  fill: #b28451;
+  grid-row: 1/span 2;
 }
 
 .cta {
@@ -185,7 +224,7 @@ body {
 
 .footer {
   display: grid;
-  grid-template-columns: minmax(9.6rem, 1fr) repeat(8, minmax(min-content, 1fr)) minmax(9.6rem, 1fr);
+  grid-template-columns: minmax(9.6rem, 1fr) repeat(8, minmax(min-content, 15rem)) minmax(9.6rem, 1fr);
 }
 
 .navbar {
