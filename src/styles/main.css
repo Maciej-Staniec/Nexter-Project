@@ -1,8 +1,8 @@
 body {
   font-family: "Roboto", sans-serif;
+  color: #6d5d4b;
   font-weight: 300;
-  line-height: 1.5;
-  font-size: 1.4rem;
+  line-height: 1.6;
 }
 
 .heading-1,
@@ -63,7 +63,6 @@ html {
 
 body {
   overflow: inherit;
-  color: #6d5d4b;
 }
 
 .btn,
@@ -202,6 +201,8 @@ body {
 }
 .features__text {
   font-size: 1.6rem;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 .cta {
