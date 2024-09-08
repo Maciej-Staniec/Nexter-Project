@@ -34,7 +34,12 @@ body {
 .heading-4 {
   font-size: 2rem;
   font-weight: 600;
+}
+.heading-4--header {
   letter-spacing: 0.1rem;
+}
+.heading-4--dark {
+  color: #54483a;
 }
 
 /* 
@@ -58,6 +63,7 @@ html {
 
 body {
   overflow: inherit;
+  color: #6d5d4b;
 }
 
 .btn,
@@ -176,19 +182,26 @@ body {
 .features__container {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   grid-template-rows: repeat(2, minmax(min-content, max-content));
-  gap: 6.4rem;
 }
 .features__item {
   display: grid;
   grid-template-columns: min-content 1fr;
+  -moz-column-gap: 2.4rem;
+       column-gap: 2.4rem;
+  row-gap: 1.2rem;
 }
 .features__icon {
   height: 4.8rem;
   width: 4.8rem;
   fill: #b28451;
   grid-row: 1/span 2;
+  transform: translateY(-1rem);
+}
+.features__text {
+  font-size: 1.6rem;
 }
 
 .cta {
