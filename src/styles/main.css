@@ -22,6 +22,7 @@ body {
   font-size: 3rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+  font-style: italic;
 }
 
 .heading-3 {
@@ -206,21 +207,44 @@ body {
 }
 
 .cta {
-  background-color: #f9f7f6;
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
 }
-.cta__pictures {
+.cta__pictures-container {
   grid-column: 1;
+  background-image: linear-gradient(to right, rgba(178, 132, 81, 0.6), rgba(178, 132, 81, 0.6)), url("../../img/back.jpg");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-items: center;
+}
+.cta__img--1 {
+  width: 100%;
+  grid-column: 2/6;
+  grid-row: 2/6;
+}
+.cta__img--2 {
+  width: 115%;
+  z-index: 200;
+  grid-column: 4/7;
+  grid-row: 4/6;
 }
 .cta__story {
-  grid-column: 2;
+  background-color: #f9f7f6;
+  display: grid;
+  gap: 2.4rem;
+  justify-items: start;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: minmax(min-content, 65%);
 }
 
 .listings {
   background-color: #fff;
-  padding: 2.4rem;
+  margin: 14.4rem 0;
   grid-column: 2/-2;
 }
 .listings__item {

@@ -141,7 +141,7 @@ Blending a colour into a background using linear-gradient with an SCSS colour va
 **************
 
 Syntax:
-background: linear-gradient(direction, rgba($declared-colour, 0.5),rgba($declared-colour, 0.5)), url(../../img/img.jpg);
+background-image: linear-gradient(direction, rgba($declared-colour, 0.5),rgba($declared-colour, 0.5)), url("../../img/img.jpg");
 
 
 ============= SKEW ==============
