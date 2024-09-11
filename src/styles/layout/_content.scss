@@ -140,18 +140,17 @@
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-content: center;
+  // width: 100vw;
 
   &__pictures-container {
-    grid-column: 1;
     background-image: linear-gradient(
         to right,
-        rgba($color-primary-dark, 0.6),
-        rgba($color-primary-dark, 0.6)
+        rgba($color-primary-dark, 0.5),
+        rgba($color-primary-dark, 0.5)
       ),
       url("../../img/back.jpg");
     background-size: cover;
-
+    // background-position: center;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -162,11 +161,14 @@
     grid-column: 2 / 6;
     grid-row: 2 / 6;
   }
+
   &__img--2 {
-    width: 115%;
-    z-index: 200;
     grid-column: 4/7;
     grid-row: 4/6;
+    width: 100%;
+    float: left;
+    transform: scale(1.15);
+    transform-origin: left;
   }
 
   &__story {
@@ -178,22 +180,4 @@
     justify-content: center;
     grid-template-columns: minmax(min-content, 65%);
   }
-}
-
-.listings {
-  background-color: #fff;
-  @include section-margin;
-  grid-column: 2 / -2;
-  &__item {
-    background-color: $color-grey-light-1;
-  }
-}
-
-.gallery {
-  background-color: $color-grey-light-1;
-  grid-column: 1/-1;
-}
-
-.footer {
-  background-color: $color-secondary;
 }

@@ -139,6 +139,7 @@
             src="img/story-1.jpeg"
             alt="A couple with a new house"
             class="cta__img--1" />
+
           <img src="img/story-2.jpeg" alt="New house" class="cta__img--2" />
         </div>
         <div class="cta__story">
@@ -153,13 +154,36 @@
         </div>
       </section>
       <section class="listings">
-        <ul>
-          <li class="listings__item">1</li>
-          <li class="listings__item">2</li>
-          <li class="listings__item">3</li>
-          <li class="listings__item">4</li>
-          <li class="listings__item">5</li>
-          <li class="listings__item">6</li>
+        <ul class="listings__container">
+          <li class="house">
+            <img
+              class="house__picture"
+              src="img/house-1.jpeg"
+              alt="First house" />
+            <svg class="house__love-icon">
+              <use href="img/sprite.svg#icon-heart-full"></use>
+            </svg>
+            <h5 class="house__name">Beautiful Family House</h5>
+            <div class="house__details">
+              <div class="house__details--item">
+                <svg class="house__icon">
+                  <use href="img/sprite.svg#icon-map-pin"></use>
+                </svg>
+                <p class="house__text">USA</p>
+              </div>
+              <div class="house__rooms-no">
+                <svg class="house__icon">
+                  <use href="img/sprite.svg#icon-profile-male"></use>
+                </svg>
+              </div>
+            </div>
+            <a href="#" class="btn">contact realtor</a>
+          </li>
+          <li class="listings__card">2</li>
+          <li class="listings__card">3</li>
+          <li class="listings__card">4</li>
+          <li class="listings__card">5</li>
+          <li class="listings__card">6</li>
         </ul>
       </section>
       <section class="gallery">gallery</section>

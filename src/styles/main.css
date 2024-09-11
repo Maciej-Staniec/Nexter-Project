@@ -86,6 +86,51 @@ body {
   margin-top: 1.2rem;
 }
 
+.gallery {
+  background-color: #f9f7f6;
+  grid-column: 1/-1;
+}
+
+.listings {
+  background-color: #fff;
+  margin: 14.4rem 0;
+  grid-column: 2/-2;
+}
+.listings__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+  gap: 6.4rem;
+  list-style: none;
+}
+
+.house {
+  background-color: #f9f7f6;
+  text-decoration: none;
+  display: grid;
+}
+.house__picture {
+  width: 100%;
+}
+.house__details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+.house__details--item {
+  display: flex;
+}
+.house__love-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: #b28451;
+}
+.house__icon {
+  grid-column: 1/2;
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #b28451;
+}
+
 .content {
   display: grid;
   grid-template-columns: minmax(9.6rem, 1fr) repeat(8, minmax(min-content, 15rem)) minmax(9.6rem, 1fr);
@@ -210,11 +255,9 @@ body {
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-content: center;
 }
 .cta__pictures-container {
-  grid-column: 1;
-  background-image: linear-gradient(to right, rgba(178, 132, 81, 0.6), rgba(178, 132, 81, 0.6)), url("../../img/back.jpg");
+  background-image: linear-gradient(to right, rgba(178, 132, 81, 0.5), rgba(178, 132, 81, 0.5)), url("../../img/back.jpg");
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -227,10 +270,12 @@ body {
   grid-row: 2/6;
 }
 .cta__img--2 {
-  width: 115%;
-  z-index: 200;
   grid-column: 4/7;
   grid-row: 4/6;
+  width: 100%;
+  float: left;
+  transform: scale(1.15);
+  transform-origin: left;
 }
 .cta__story {
   background-color: #f9f7f6;
@@ -242,27 +287,10 @@ body {
   grid-template-columns: minmax(min-content, 65%);
 }
 
-.listings {
-  background-color: #fff;
-  margin: 14.4rem 0;
-  grid-column: 2/-2;
-}
-.listings__item {
-  background-color: #f9f7f6;
-}
-
-.gallery {
-  background-color: #f9f7f6;
-  grid-column: 1/-1;
-}
-
-.footer {
-  background-color: #101d2c;
-}
-
 .footer {
   display: grid;
   grid-template-columns: minmax(9.6rem, 1fr) repeat(8, minmax(min-content, 15rem)) minmax(9.6rem, 1fr);
+  background-color: #101d2c;
 }
 
 .navbar {

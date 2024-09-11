@@ -1,4 +1,5 @@
 .footer {
-  // grid-column: 2/-1;
   @include main-grid;
+  background-color: $color-secondary;
+  // grid-column: 2/-1;
 }
