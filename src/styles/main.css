@@ -76,14 +76,15 @@ body {
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   padding: 1.2rem 2.4rem;
-  align-self: start;
-  justify-self: start;
-  background-color: #b28451;
+  background-color: #c69963;
+  cursor: pointer;
+  text-align: center;
 }
 
-.header-btn {
-  background-color: #c69963;
+.btn__header {
   margin-top: 1.2rem;
+  justify-self: start;
+  align-self: start;
 }
 
 .gallery {
@@ -98,7 +99,7 @@ body {
 }
 .listings__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-template-rows: repeat(2, minmax(min-content, max-content));
   gap: 6.4rem;
   list-style: none;
@@ -108,21 +109,51 @@ body {
   background-color: #f9f7f6;
   text-decoration: none;
   display: grid;
+  gap: 2.4rem;
 }
 .house__picture {
   width: 100%;
+  z-index: 1;
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+.house__name {
+  grid-row: 1;
+  grid-column: 1/-1;
+  z-index: 3;
+  padding: 1.2rem;
+  background-color: #101d2c;
+  width: 80%;
+  justify-self: center;
+  align-self: end;
+  transform: translateY(50%);
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
 }
 .house__details {
+  margin-top: 2.4rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
 }
-.house__details--item {
+.house__details-item {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2.4rem;
+  gap: 1.2rem;
 }
 .house__love-icon {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0.8rem;
   fill: #b28451;
+  z-index: 2;
+  justify-self: end;
+  grid-row: 1;
+  grid-column: 1/-1;
 }
 .house__icon {
   grid-column: 1/2;
