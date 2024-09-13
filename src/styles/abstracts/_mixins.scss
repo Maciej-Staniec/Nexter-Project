@@ -7,8 +7,8 @@
 @mixin main-grid {
   display: grid;
   grid-template-columns:
-    minmax(9.6rem, 1fr) repeat(8, minmax(min-content, 15rem))
-    minmax(9.6rem, 1fr);
+    minmax(6.4rem, 1fr) repeat(8, minmax(min-content, 15rem))
+    minmax(6.4rem, 1fr);
 }
 
 // Center flexbox content

@@ -36,9 +36,11 @@
     align-self: end;
     transform: translateY(50%);
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 300;
     letter-spacing: 0.1rem;
     text-align: center;
+    text-transform: capitalize;
   }
 
   &__details {
@@ -46,13 +48,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem;
+    // justify-items: center;
 
     &-item {
       display: flex;
       flex-direction: row;
       align-items: center;
-      // justify-content: center;
-      margin-left: 2.4rem;
+      margin: 0 1.6rem;
       gap: 1.2rem;
     }
   }

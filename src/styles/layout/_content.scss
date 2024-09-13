@@ -109,7 +109,7 @@
     list-style: none;
     display: grid;
     gap: 4.8rem;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     // max-width: calc(20rem * 3 + 6.4rem * 2);
     grid-template-rows: repeat(2, minmax(min-content, max-content));
   }
